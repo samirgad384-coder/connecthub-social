@@ -3,351 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConnectHub - التواصل الاجتماعي</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Samir Gad</title>
+    <meta name="description" content="Samir Gad - مطوّر ويب وطالب هندسة">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-infinity"></i>
-                <span>ConnectHub</span>
-            </div>
-            <div class="nav-search">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="ابحث عن أصدقاء أو محتوى...">
-            </div>
-            <div class="nav-actions">
-                <a href="#" class="nav-link active"><i class="fas fa-home"></i><span>الرئيسية</span></a>
-                <a href="#" class="nav-link"><i class="fas fa-users"></i><span>الأصدقاء</span></a>
-                <a href="#" class="nav-link"><i class="fas fa-video"></i><span>الفيديوهات</span></a>
-                <a href="#" class="nav-link"><i class="fas fa-store"></i><span>السوق</span></a>
-            </div>
-            <div class="nav-user">
-                <button class="icon-btn">
-                    <i class="fas fa-bell"></i>
-                    <span class="badge">3</span>
-                </button>
-                <button class="icon-btn">
-                    <i class="fas fa-comment-dots"></i>
-                    <span class="badge">7</span>
-                </button>
-                <div class="user-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Samir+Gad&background=1877f2&color=fff&size=40" alt="Profile">
-                    <span class="online-dot"></span>
+    <!-- خلفية ضوئية -->
+    <div class="glow-top"></div>
+    <div class="glow-bottom"></div>
+
+    <main class="container" id="main">
+
+        <!-- الملف الشخصي -->
+        <section class="profile fade-in">
+            <div class="avatar-wrapper">
+                <div class="avatar-ring">
+                    <img
+                        src="https://ui-avatars.com/api/?name=Samir+Gad&background=1a73e8&color=ffffff&size=200&bold=true&font-size=0.38"
+                        alt="Samir Gad"
+                        class="avatar"
+                    >
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="main-content">
-
-        <!-- Left Sidebar -->
-        <aside class="left-sidebar">
-            <div class="profile-card">
-                <div class="profile-cover"></div>
-                <div class="profile-info">
-                    <img src="https://ui-avatars.com/api/?name=Samir+Gad&background=1877f2&color=fff&size=80" alt="Profile" class="profile-img">
-                    <h3>Samir Gad</h3>
-                    <p>@samirgad384</p>
-                    <div class="profile-stats">
-                        <div class="stat"><strong>248</strong><span>منشور</span></div>
-                        <div class="stat"><strong>1.2K</strong><span>متابع</span></div>
-                        <div class="stat"><strong>384</strong><span>يتابع</span></div>
-                    </div>
-                </div>
-            </div>
-            <nav class="sidebar-nav">
-                <a href="#" class="sidebar-link active"><i class="fas fa-home"></i><span>الرئيسية</span></a>
-                <a href="#" class="sidebar-link"><i class="fas fa-user"></i><span>ملفي الشخصي</span></a>
-                <a href="#" class="sidebar-link"><i class="fas fa-users"></i><span>الأصدقاء</span></a>
-                <a href="#" class="sidebar-link"><i class="fas fa-bookmark"></i><span>المحفوظات</span></a>
-                <a href="#" class="sidebar-link"><i class="fas fa-photo-video"></i><span>الصور والفيديوهات</span></a>
-                <a href="#" class="sidebar-link"><i class="fas fa-calendar-alt"></i><span>الأحداث</span></a>
-                <a href="#" class="sidebar-link"><i class="fas fa-cog"></i><span>الإعدادات</span></a>
-            </nav>
-            <div class="trending-section">
-                <h4>🔥 ما يتداول الآن</h4>
-                <div class="trending-item"><span class="trending-num">#1</span><div><span class="trending-topic">#تكنولوجيا</span><span class="trending-count">24.5K تغريدة</span></div></div>
-                <div class="trending-item"><span class="trending-num">#2</span><div><span class="trending-topic">#الذكاء_الاصطناعي</span><span class="trending-count">18.2K تغريدة</span></div></div>
-                <div class="trending-item"><span class="trending-num">#3</span><div><span class="trending-topic">#برمجة</span><span class="trending-count">12.1K تغريدة</span></div></div>
-                <div class="trending-item"><span class="trending-num">#4</span><div><span class="trending-topic">#مصر</span><span class="trending-count">9.8K تغريدة</span></div></div>
-            </div>
-        </aside>
-
-        <!-- Feed -->
-        <section class="feed">
-
-            <!-- Stories -->
-            <div class="stories-section card">
-                <div class="stories-container">
-                    <div class="story add-story">
-                        <div class="add-story-icon"><i class="fas fa-plus"></i></div>
-                        <span>أضف قصة</span>
-                    </div>
-                    <div class="story" style="background:linear-gradient(135deg,#667eea,#764ba2)">
-                        <img src="https://ui-avatars.com/api/?name=Ahmed+Ali&background=e74c3c&color=fff&size=40" class="story-avatar" alt="">
-                        <span>Ahmed Ali</span>
-                    </div>
-                    <div class="story" style="background:linear-gradient(135deg,#f093fb,#f5576c)">
-                        <img src="https://ui-avatars.com/api/?name=Sara+M&background=9b59b6&color=fff&size=40" class="story-avatar" alt="">
-                        <span>Sara M</span>
-                    </div>
-                    <div class="story" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">
-                        <img src="https://ui-avatars.com/api/?name=Omar+K&background=27ae60&color=fff&size=40" class="story-avatar" alt="">
-                        <span>Omar K</span>
-                    </div>
-                    <div class="story" style="background:linear-gradient(135deg,#43e97b,#38f9d7)">
-                        <img src="https://ui-avatars.com/api/?name=Nour+H&background=e67e22&color=fff&size=40" class="story-avatar" alt="">
-                        <span>Nour H</span>
-                    </div>
-                    <div class="story" style="background:linear-gradient(135deg,#fa709a,#fee140)">
-                        <img src="https://ui-avatars.com/api/?name=Mona+S&background=16a085&color=fff&size=40" class="story-avatar" alt="">
-                        <span>Mona S</span>
-                    </div>
-                </div>
+                <span class="status-dot" title="متاح للتواصل"></span>
             </div>
 
-            <!-- Create Post -->
-            <div class="create-post card">
-                <div class="create-post-header">
-                    <img src="https://ui-avatars.com/api/?name=Samir+Gad&background=1877f2&color=fff&size=40" alt="Profile" class="post-user-img">
-                    <div class="create-post-input" onclick="openPostModal()">
-                        <span>ما الذي يدور في ذهنك، Samir؟</span>
-                    </div>
-                </div>
-                <div class="create-post-actions">
-                    <button class="post-action-btn"><i class="fas fa-photo-video" style="color:#45bd62"></i><span>صورة/فيديو</span></button>
-                    <button class="post-action-btn"><i class="fas fa-user-tag" style="color:#1877f2"></i><span>وضع علامة</span></button>
-                    <button class="post-action-btn"><i class="fas fa-smile" style="color:#f7b928"></i><span>مشاعر</span></button>
-                </div>
+            <h1 class="name">Samir Gad</h1>
+
+            <div class="title-line">
+                <span class="dot"></span>
+                <span>مطوّر ويب &amp; طالب هندسة</span>
+                <span class="dot"></span>
             </div>
 
-            <!-- Post 1 -->
-            <article class="post card">
-                <div class="post-header">
-                    <img src="https://ui-avatars.com/api/?name=Ahmed+Ali&background=e74c3c&color=fff&size=46" alt="" class="post-avatar">
-                    <div class="post-meta">
-                        <div class="post-user-name">Ahmed Ali <span class="verified"><i class="fas fa-check-circle"></i></span></div>
-                        <div class="post-time"><i class="fas fa-globe-americas"></i> منذ ساعتين</div>
-                    </div>
-                    <button class="post-options"><i class="fas fa-ellipsis-h"></i></button>
-                </div>
-                <div class="post-content">
-                    <p>🚀 تعلمت اليوم شيئاً رائعاً عن الذكاء الاصطناعي وكيف يمكن استخدامه في تطوير التطبيقات! المستقبل واعد جداً ومثير للاهتمام <strong>#تكنولوجيا</strong> <strong>#ذكاء_اصطناعي</strong></p>
-                </div>
-                <div class="post-image">
-                    <img src="https://picsum.photos/seed/ai/600/350" alt="Post Image">
-                </div>
-                <div class="post-stats">
-                    <span><i class="fas fa-thumbs-up" style="color:#1877f2"></i> 248 إعجاب</span>
-                    <span>84 تعليق · 32 مشاركة</span>
-                </div>
-                <div class="post-actions">
-                    <button class="action-btn like-btn" onclick="toggleLike(this)"><i class="far fa-thumbs-up"></i><span>أعجبني</span></button>
-                    <button class="action-btn"><i class="far fa-comment"></i><span>تعليق</span></button>
-                    <button class="action-btn"><i class="far fa-share-square"></i><span>مشاركة</span></button>
-                </div>
-            </article>
+            <p class="bio">
+                شغوف بالتقنية والبرمجة، أبني مشاريع رقمية بأسلوب بسيط واحترافي.<br>
+                أسعى دائماً للتعلم والابتكار 🚀
+            </p>
 
-            <!-- Post 2 -->
-            <article class="post card">
-                <div class="post-header">
-                    <img src="https://ui-avatars.com/api/?name=Sara+Mohamed&background=9b59b6&color=fff&size=46" alt="" class="post-avatar">
-                    <div class="post-meta">
-                        <div class="post-user-name">Sara Mohamed</div>
-                        <div class="post-time"><i class="fas fa-lock"></i> منذ 5 ساعات</div>
-                    </div>
-                    <button class="post-options"><i class="fas fa-ellipsis-h"></i></button>
-                </div>
-                <div class="post-content">
-                    <p>☀️ يوم جميل في القاهرة! أتمنى لكم جميعاً يوماً رائعاً مليئاً بالسعادة والإنجاز 🌸✨</p>
-                </div>
-                <div class="post-stats">
-                    <span><i class="fas fa-heart" style="color:#e74c3c"></i> 156 إعجاب</span>
-                    <span>42 تعليق · 8 مشاركة</span>
-                </div>
-                <div class="post-actions">
-                    <button class="action-btn like-btn" onclick="toggleLike(this)"><i class="far fa-thumbs-up"></i><span>أعجبني</span></button>
-                    <button class="action-btn"><i class="far fa-comment"></i><span>تعليق</span></button>
-                    <button class="action-btn"><i class="far fa-share-square"></i><span>مشاركة</span></button>
-                </div>
-            </article>
-
-            <!-- Post 3 -->
-            <article class="post card">
-                <div class="post-header">
-                    <img src="https://ui-avatars.com/api/?name=Omar+Khaled&background=27ae60&color=fff&size=46" alt="" class="post-avatar">
-                    <div class="post-meta">
-                        <div class="post-user-name">Omar Khaled <span class="verified"><i class="fas fa-check-circle"></i></span></div>
-                        <div class="post-time"><i class="fas fa-globe-americas"></i> أمس</div>
-                    </div>
-                    <button class="post-options"><i class="fas fa-ellipsis-h"></i></button>
-                </div>
-                <div class="post-content">
-                    <p>💻 مشروع جديد بدأت العمل عليه اليوم - موقع تواصل اجتماعي احترافي مبني بـ HTML/CSS/JS ✨ النتائج مبهرة! ترقبوا الإطلاق قريباً 🔥 <strong>#برمجة</strong> <strong>#تكنولوجيا</strong></p>
-                </div>
-                <div class="post-image double-image">
-                    <img src="https://picsum.photos/seed/code1/295/200" alt="">
-                    <img src="https://picsum.photos/seed/web1/295/200" alt="">
-                </div>
-                <div class="post-stats">
-                    <span><i class="fas fa-thumbs-up" style="color:#1877f2"></i><i class="fas fa-heart" style="color:#e74c3c;margin-right:2px"></i> 432 إعجاب</span>
-                    <span>127 تعليق · 89 مشاركة</span>
-                </div>
-                <div class="post-actions">
-                    <button class="action-btn like-btn" onclick="toggleLike(this)"><i class="far fa-thumbs-up"></i><span>أعجبني</span></button>
-                    <button class="action-btn"><i class="far fa-comment"></i><span>تعليق</span></button>
-                    <button class="action-btn"><i class="far fa-share-square"></i><span>مشاركة</span></button>
-                </div>
-            </article>
-
-            <!-- Post 4 -->
-            <article class="post card">
-                <div class="post-header">
-                    <img src="https://ui-avatars.com/api/?name=Laila+Youssef&background=c0392b&color=fff&size=46" alt="" class="post-avatar">
-                    <div class="post-meta">
-                        <div class="post-user-name">Laila Youssef</div>
-                        <div class="post-time"><i class="fas fa-globe-americas"></i> منذ يومين</div>
-                    </div>
-                    <button class="post-options"><i class="fas fa-ellipsis-h"></i></button>
-                </div>
-                <div class="post-content">
-                    <p>📚 انتهيت من قراءة كتاب "كيف تفكر مثل مبرمج" وهو كتاب رائع جداً يستحق القراءة! يغير طريقة تفكيرك بالكامل 💡</p>
-                </div>
-                <div class="post-image">
-                    <img src="https://picsum.photos/seed/book/600/300" alt="">
-                </div>
-                <div class="post-stats">
-                    <span><i class="fas fa-thumbs-up" style="color:#1877f2"></i> 89 إعجاب</span>
-                    <span>23 تعليق · 15 مشاركة</span>
-                </div>
-                <div class="post-actions">
-                    <button class="action-btn like-btn" onclick="toggleLike(this)"><i class="far fa-thumbs-up"></i><span>أعجبني</span></button>
-                    <button class="action-btn"><i class="far fa-comment"></i><span>تعليق</span></button>
-                    <button class="action-btn"><i class="far fa-share-square"></i><span>مشاركة</span></button>
-                </div>
-            </article>
-
+            <div class="badge-row">
+                <span class="badge"><i class="fas fa-map-marker-alt"></i> المنوفية، مصر</span>
+                <span class="badge"><i class="fas fa-graduation-cap"></i> طالب ثانوي</span>
+                <span class="badge"><i class="fas fa-code"></i> HTML · CSS · JS</span>
+            </div>
         </section>
 
-        <!-- Right Sidebar -->
-        <aside class="right-sidebar">
-            <div class="card suggest-section">
-                <h4>أشخاص قد تعرفهم</h4>
-                <div class="suggest-item">
-                    <img src="https://ui-avatars.com/api/?name=Nour+Hassan&background=e67e22&color=fff&size=46" alt="">
-                    <div class="suggest-info"><strong>Nour Hassan</strong><span>5 أصدقاء مشتركون</span></div>
-                    <button class="follow-btn" onclick="toggleFollow(this)">متابعة</button>
-                </div>
-                <div class="suggest-item">
-                    <img src="https://ui-avatars.com/api/?name=Mona+Samy&background=16a085&color=fff&size=46" alt="">
-                    <div class="suggest-info"><strong>Mona Samy</strong><span>12 صديقاً مشتركاً</span></div>
-                    <button class="follow-btn" onclick="toggleFollow(this)">متابعة</button>
-                </div>
-                <div class="suggest-item">
-                    <img src="https://ui-avatars.com/api/?name=Karim+Adel&background=8e44ad&color=fff&size=46" alt="">
-                    <div class="suggest-info"><strong>Karim Adel</strong><span>3 أصدقاء مشتركون</span></div>
-                    <button class="follow-btn" onclick="toggleFollow(this)">متابعة</button>
-                </div>
-                <div class="suggest-item">
-                    <img src="https://ui-avatars.com/api/?name=Laila+Youssef&background=c0392b&color=fff&size=46" alt="">
-                    <div class="suggest-info"><strong>Laila Youssef</strong><span>8 أصدقاء مشتركون</span></div>
-                    <button class="follow-btn" onclick="toggleFollow(this)">متابعة</button>
-                </div>
-            </div>
+        <!-- روابط التواصل الاجتماعي -->
+        <section class="links-section fade-in delay-1">
+            <p class="section-label">تواصل معي عبر</p>
 
-            <div class="card sponsored-section">
-                <h4>إعلانات مدعومة</h4>
-                <div class="ad-item">
-                    <img src="https://picsum.photos/seed/ad1/280/140" alt="Ad">
-                    <strong>تعلم البرمجة مجاناً</strong>
-                    <span>اكتشف أفضل مصادر تعلم البرمجة عبر الإنترنت</span>
-                    <a href="#" class="ad-link">اعرف المزيد ←</a>
-                </div>
-            </div>
+            <div class="links">
 
-            <div class="card chat-section">
-                <div class="chat-header">
-                    <h4>المحادثات</h4>
-                    <div class="chat-actions">
-                        <button><i class="fas fa-search"></i></button>
-                        <button><i class="fas fa-ellipsis-h"></i></button>
+                <a href="https://wa.me/201234567890" target="_blank" rel="noopener" class="link-card" data-color="#25d366">
+                    <div class="link-icon" style="background:#25d366">
+                        <i class="fab fa-whatsapp"></i>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-avatar-wrap">
-                        <img src="https://ui-avatars.com/api/?name=Ahmed+Ali&background=e74c3c&color=fff&size=36" alt="">
-                        <span class="online-indicator"></span>
+                    <div class="link-info">
+                        <span class="link-name">واتساب</span>
+                        <span class="link-sub">تحدّث معي مباشرة</span>
                     </div>
-                    <span class="contact-name">Ahmed Ali</span>
-                    <span class="contact-time">الآن</span>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-avatar-wrap">
-                        <img src="https://ui-avatars.com/api/?name=Sara+Mohamed&background=9b59b6&color=fff&size=36" alt="">
-                        <span class="online-indicator"></span>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://github.com/samirgad384-coder" target="_blank" rel="noopener" class="link-card" data-color="#e0e0e0">
+                    <div class="link-icon" style="background:#161b22;border:1px solid rgba(255,255,255,0.1)">
+                        <i class="fab fa-github"></i>
                     </div>
-                    <span class="contact-name">Sara Mohamed</span>
-                    <span class="contact-time">5 دقائق</span>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-avatar-wrap">
-                        <img src="https://ui-avatars.com/api/?name=Omar+Khaled&background=27ae60&color=fff&size=36" alt="">
-                        <span class="online-indicator offline"></span>
+                    <div class="link-info">
+                        <span class="link-name">GitHub</span>
+                        <span class="link-sub">مشاريعي البرمجية</span>
                     </div>
-                    <span class="contact-name">Omar Khaled</span>
-                    <span class="contact-time">1 ساعة</span>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-avatar-wrap">
-                        <img src="https://ui-avatars.com/api/?name=Nour+Hassan&background=e67e22&color=fff&size=36" alt="">
-                        <span class="online-indicator offline"></span>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://facebook.com/YOUR_USERNAME" target="_blank" rel="noopener" class="link-card" data-color="#1877f2">
+                    <div class="link-icon" style="background:#1877f2">
+                        <i class="fab fa-facebook-f"></i>
                     </div>
-                    <span class="contact-name">Nour Hassan</span>
-                    <span class="contact-time">3 ساعات</span>
-                </div>
+                    <div class="link-info">
+                        <span class="link-name">فيسبوك</span>
+                        <span class="link-sub">صفحتي على فيسبوك</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://instagram.com/YOUR_USERNAME" target="_blank" rel="noopener" class="link-card" data-color="#e1306c">
+                    <div class="link-icon ig-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="link-info">
+                        <span class="link-name">إنستجرام</span>
+                        <span class="link-sub">صوري ولحظاتي</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://tiktok.com/@YOUR_USERNAME" target="_blank" rel="noopener" class="link-card" data-color="#ff0050">
+                    <div class="link-icon" style="background:#010101;border:1px solid rgba(255,255,255,0.12)">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="link-info">
+                        <span class="link-name">تيك توك</span>
+                        <span class="link-sub">محتواي على تيك توك</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener" class="link-card" data-color="#ff0000">
+                    <div class="link-icon" style="background:#ff0000">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="link-info">
+                        <span class="link-name">يوتيوب</span>
+                        <span class="link-sub">قناتي على يوتيوب</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener" class="link-card" data-color="#0077b5">
+                    <div class="link-icon" style="background:#0077b5">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="link-info">
+                        <span class="link-name">لينكد إن</span>
+                        <span class="link-sub">ملفي المهني</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="https://t.me/YOUR_USERNAME" target="_blank" rel="noopener" class="link-card" data-color="#0088cc">
+                    <div class="link-icon" style="background:#0088cc">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div class="link-info">
+                        <span class="link-name">تيليجرام</span>
+                        <span class="link-sub">تواصل عبر تيليجرام</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
+                <a href="mailto:samir@email.com" class="link-card" data-color="#ea4335">
+                    <div class="link-icon" style="background:linear-gradient(135deg,#ea4335,#fbbc04)">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="link-info">
+                        <span class="link-name">البريد الإلكتروني</span>
+                        <span class="link-sub">راسلني على الإيميل</span>
+                    </div>
+                    <i class="fas fa-arrow-left link-arrow"></i>
+                </a>
+
             </div>
-        </aside>
+        </section>
+
+        <!-- تذييل الصفحة -->
+        <footer class="footer fade-in delay-2">
+            <div class="footer-line"></div>
+            <p>صُنع بـ <span class="heart">❤</span> بواسطة <strong>Samir Gad</strong> &copy; 2026</p>
+        </footer>
 
     </main>
-
-    <!-- Create Post Modal -->
-    <div class="modal-overlay" id="postModal" onclick="closePostModal(event)">
-        <div class="modal">
-            <div class="modal-header">
-                <h3>إنشاء منشور</h3>
-                <button class="close-btn" onclick="closePostModal()"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="modal-body">
-                <div class="modal-user">
-                    <img src="https://ui-avatars.com/api/?name=Samir+Gad&background=1877f2&color=fff&size=46" alt="">
-                    <div>
-                        <strong>Samir Gad</strong>
-                        <button class="audience-btn"><i class="fas fa-globe-americas"></i> الجميع <i class="fas fa-caret-down"></i></button>
-                    </div>
-                </div>
-                <textarea class="modal-textarea" placeholder="ما الذي يدور في ذهنك؟" id="postTextarea"></textarea>
-                <div class="modal-add-to-post">
-                    <span>أضف إلى منشورك</span>
-                    <div class="add-options">
-                        <button title="صورة/فيديو"><i class="fas fa-image" style="color:#45bd62"></i></button>
-                        <button title="وضع علامة"><i class="fas fa-user-tag" style="color:#1877f2"></i></button>
-                        <button title="مشاعر"><i class="fas fa-smile" style="color:#f7b928"></i></button>
-                        <button title="موقع"><i class="fas fa-map-marker-alt" style="color:#f5533d"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="publish-btn" onclick="publishPost()">نشر</button>
-            </div>
-        </div>
-    </div>
 
     <script src="app.js"></script>
 </body>
